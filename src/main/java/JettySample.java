@@ -7,7 +7,7 @@ public class JettySample {
         Server server = new Server(8081);
 
         Context root = new Context(server, "/");
-        root.setResourceBase(".");
+        root.setResourceBase("./src/main/java");
         root.setHandler(new ResourceHandler());
 
         server.start();
